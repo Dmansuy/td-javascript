@@ -22,7 +22,20 @@ s.get(obj) // 'foobar'
 s.size // 1
 */
 
-let Storage = (key, value) => {
+let Storage = () => {
+
+    let s = [];
+    return {
+        set: function (key, value){
+            s.set(key, value)
+        },
+        get: function (key) {
+            return key :
+        },
+        size: function () {
+            return s.length;
+        }
+    }
 };
 
 /* Testing Part */

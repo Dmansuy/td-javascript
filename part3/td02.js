@@ -14,6 +14,18 @@ Enfin, il doit comporter un attribut length, retournant le nombre d'éléments c
 */
 
 let Storage = () => {
+
+    let s = [];
+    return {
+        put: function (key, value) {
+        },
+        fetch: function (key) {
+            return key :
+        },
+        length: function () {
+            return s.length;
+        }
+    }
 };
 
 /* Testing Part */

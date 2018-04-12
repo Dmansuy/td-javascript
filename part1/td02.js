@@ -30,17 +30,17 @@ queue.execute() // ['foo']
 /* TD Part */
 function ExecutionQueue() {
 
-    var functions = [];
+    let functions = [];
 
     return {
         push: function (param) {
             functions.push(param);
         },
         execute: function () {
-            var output = [];
+            let output = [];
 
             while (functions.length) {
-                var f = functions.shift();
+                let f = functions.shift();
                 output.push(f())
             }
             // for (var i = 0; i < functions.length; i++) {
@@ -57,7 +57,7 @@ function ExecutionQueue() {
 }
 
 /* Testing Part */
-var queue = new ExecutionQueue();
+let queue = new ExecutionQueue();
 queue.push(function () {
     return 'test'
 });

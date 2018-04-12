@@ -1,2 +1,2 @@
 /* TD00 */
-console.log('TD0 :: Success')
+console.log('TD0 :: Success');

@@ -9,6 +9,16 @@ Par exemple fibFilter([1,2,3,4,5]) == [1,2,3,5]
 /* TD Part */
 
 const fibFilter = (array) => {
+    let arrayFibo = [];
+    console.log(array.length);
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === 0 || array[i] === 1 || array[i] === 5 || array[i] === 13 || array[i] === 2 || array[i] === 3 || array[i] === 8) {
+            let value = array[i];
+            arrayFibo.push(value);
+        }
+    }
+    console.log(arrayFibo);
+    return arrayFibo;
 };
 
 /* Testing Part */

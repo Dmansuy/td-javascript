@@ -11,13 +11,13 @@ Exemple :
 
 /* TD Part */
 function parseCSV(string) {
-    var arrayOfStrings = string.split("\n");
-    var sliceOfArray = arrayOfStrings.slice(1, 4);
-    var arrayOfValue = [];
+    let arrayOfStrings = string.split("\n");
+    let sliceOfArray = arrayOfStrings.slice(1, 4);
+    let arrayOfValue = [];
 
-    for (var i = 0; i < sliceOfArray.length; i++) {
-        var theTable = sliceOfArray[i].split(";");
-        var object = {
+    for (let i = 0; i < sliceOfArray.length; i++) {
+        let theTable = sliceOfArray[i].split(";");
+        let object = {
             title: theTable[0],
             author: theTable[1],
             date: Number(theTable[2])
@@ -31,12 +31,12 @@ function parseCSV(string) {
 }
 
 /* Testing Part */
-var csv = "Title;Author;Date\n" +
+let csv = "Title;Author;Date\n" +
     "Animal Farm;George Orwell;1945\n" +
     "The Hitchhiker's Guide to the Galaxy;Douglas Adams;1985\n" +
     "Transmetropolitain;Warren Ellis;1997";
 
-var parsed = parseCSV(csv);
+let parsed = parseCSV(csv);
 if (parsed[0].title === 'Animal Farm' &&
     parsed[1].author === 'Douglas Adams' &&
     parsed[2].date === 1997) {

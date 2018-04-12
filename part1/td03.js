@@ -16,10 +16,10 @@ function waitThreeSecondsAndReturn42(callback) {
 
 /* Testing part */
 
-var startTime = Number(new Date());
+let startTime = Number(new Date());
 
 function callback(returnedValue) {
-    var timeShift;
+    let timeShift;
     timeShift = parseInt((Number(new Date()) - startTime) / 1000);
 
     if (timeShift === 3 &&
