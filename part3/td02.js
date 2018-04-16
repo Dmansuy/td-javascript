@@ -13,6 +13,7 @@ Enfin, il doit comporter un attribut length, retournant le nombre d'éléments c
 
 */
 
+// le td01 et td02 ne sont que des squelettes dépourvus d'organes
 let Storage = () => {
 
     let s = [];
@@ -20,7 +21,7 @@ let Storage = () => {
         put: function (key, value) {
         },
         fetch: function (key) {
-            return key :
+            // return key :  dois comparer la clées à la valeur
         },
         length: function () {
             return s.length;

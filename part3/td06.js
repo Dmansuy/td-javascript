@@ -19,6 +19,7 @@ p1.add(p2) // Retourne un nouveau point ayant pour coordonées x : 4 + 3, y : 2 
 /* TD Part */
 
 class Point3 {
+//Je n'ai pas réussi
 }
 
 /* Testing Part */

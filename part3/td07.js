@@ -23,6 +23,7 @@ De plus vous devrez ajouter un attribut sum retournant la somme des coordonées 
 /* TD Part */
 
 class Point {
+//Je n'ai pas réussi
     constructor(x, y, z = null) { // Vous pouvez modifier ce prototype TANT que les tests passent
     }
 }

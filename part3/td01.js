@@ -22,6 +22,7 @@ s.get(obj) // 'foobar'
 s.size // 1
 */
 
+// le td01 et td02 ne sont que des squelettes dépourvus d'organes
 let Storage = () => {
 
     let s = [];
@@ -30,7 +31,7 @@ let Storage = () => {
             s.set(key, value)
         },
         get: function (key) {
-            return key :
+            // return key : dois comparer la clées à la valeur
         },
         size: function () {
             return s.length;

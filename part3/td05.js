@@ -17,6 +17,8 @@ p1.sub(p2) // Retourne un nouveau point ayant pour coordonées x = 3 - 4 et y = 
 /* TD Part */
 
 class Point2 {
+
+//Je n'ai pas réussi
 }
 
 /* Testing Part */
